@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>How to Write a Story</title>
+  <style>
+    body { font-family: Arial, sans-serif; line-height: 1.6; margin: 40px; background-color: #fafafa; }
+    h1, h2 { color: #2c3e50; }
+    .step { margin-bottom: 2em; background: white; padding: 20px; border-radius: 10px; box-shadow: 0 0 10px rgba(0,0,0,0.1); }
+    textarea { width: 100%; height: 140px; margin-top: 10px; padding: 10px; font-family: inherit; }
+    button { margin-top: 10px; background-color: #2c3e50; color: white; border: none; padding: 10px 15px; border-radius: 5px; cursor: pointer; }
+    button:hover { background-color: #34495e; }
+    em.example { display: block; background: #f4f4f4; border-left: 4px solid #2c3e50; padding: 10px; border-radius: 6px; font-style: italic; color: #555; }
+    .sofar { background:#f7fafc; border:1px solid #e2e8f0; padding:10px; border-radius:8px; white-space:pre-wrap; margin-top:8px; max-height:140px; overflow:auto; }
+    .hint { color:#5a6b7d; font-size:0.95rem; margin: 6px 0; }
+    .summary { background:white; padding:20px; border-radius:10px; box-shadow:0 0 10px rgba(0,0,0,0.1); }
+    #preview { white-space: pre-wrap; background:#111; color:#f1f5f9; padding:16px; border-radius:10px; min-height:200px; }
+    .counter { margin-top:10px; font-weight:700; }
+    .counter small { font-weight:400; color:#5a6b7d; }
+  </style>
+</head>
+<body>
+  <h1>How to Write a Story in English</h1>
+  <p class="hint">Start in Step 1 and <strong>continue the same story</strong> in each next step. Your text from earlier steps appears above the next box as “So far”, so you can keep writing without scrolling. Everything is autosaved in this browser.</p>
+
+  <div class="step" id="step1">
+    <h2>1. Idea & Beginning – Set the scene</h2>
+    <em class="example">Example (about 100 words): It was still dark when Anna left the cabin. The forest was quiet except for the crunch of snow beneath her boots. She felt nervous but determined — this was her only chance to find her brother before the storm returned. A dim glow pulsed on the horizon, and every step seemed to carry her away from safety and closer to something she did not understand.</em>
+    <p>Introduce the setting, main character, and a hint of the problem.</p>
+    <textarea id="input1" placeholder="Write the beginning of your story here..."></textarea>
+  </div>
+
+  <div class="step" id="step2">
+    <h2>2. Rising Action – Something changes</h2>
+    <div class="hint"><strong>So far (from Step 1):</strong></div>
+    <div class="sofar" id="sofar2">(Your Step 1 text will appear here.)</div>
+    <em class="example">Example (around 100 words): Suddenly, a bright light flashed between the trees. Anna stopped and shielded her eyes. Something — or someone — was moving toward her. She hesitated, her breath visible in the cold air, before she decided to follow the light. The ground dipped, the path twisted, and the glow kept its distance like it wanted to be chased.</em>
+    <p>Continue the same story. Show a problem or goal and the first difficulties.</p>
+    <textarea id="input2" placeholder="Continue the story..."></textarea>
+  </div>
+
+  <div class="step" id="step3">
+    <h2>3. Closer Description – Build atmosphere</h2>
+    <div class="hint"><strong>So far (Steps 1–2):</strong></div>
+    <div class="sofar" id="sofar3">(Your text from Steps 1–2 will appear here.)</div>
+    <em class="example">Example (around 80–100 words): The forest stretched endlessly, shadows moving like whispers among the trees. The moonlight painted silver patterns on the ground. Every branch looked like a hand reaching out. The wind sighed, carrying the cold smell of snow and smoke.</em>
+    <p>Add sensory details and vary sentences to make the scene vivid.</p>
+    <textarea id="input3" placeholder="Add description that fits your ongoing story..."></textarea>
+  </div>
+
+  <div class="step" id="step4">
+    <h2>4. Climax – Turning point</h2>
+    <div class="hint"><strong>So far (Steps 1–3):</strong></div>
+    <div class="sofar" id="sofar4">(Your text from Steps 1–3 will appear here.)</div>
+    <em class="example">Example (around 100 words): The light stopped. A figure stepped forward, raising a small lantern. \"You’re late,\" a voice said. The ground trembled and a nearby tree cracked. Anna ran, the figure running too, the lantern swinging wildly as the forest roared around them.</em>
+    <p>Write the most intense moment. What forces clash? What choice must be made?</p>
+    <textarea id="input4" placeholder="Write the climax of your story..."></textarea>
+  </div>
+
+  <div class="step" id="step5">
+    <h2>5. Resolution – How is it solved?</h2>
+    <div class="hint"><strong>So far (Steps 1–4):</strong></div>
+    <div class="sofar" id="sofar5">(Your text from Steps 1–4 will appear here.)</div>
+    <em class="example">Example (around 80–100 words): The noise faded. The lantern revealed a narrow path hidden behind fallen branches. They squeezed through, leaving the worst of the wind behind. The figure lowered the light. \"We’re safe for now,\" the voice said, and Anna finally dared to breathe.</em>
+    <p>Show consequences and what the characters learn. Tie threads together.</p>
+    <textarea id="input5" placeholder="Write the resolution of your story..."></textarea>
+  </div>
+
+  <div class="step" id="step6">
+    <h2>6. Final polish – Edit & enrich</h2>
+    <div class="hint"><strong>So far (Steps 1–5):</strong></div>
+    <div class="sofar" id="sofar6">(Your text from Steps 1–5 will appear here.)</div>
+    <em class="example">Example (around 60–80 words): She laughed through her tears, realizing the journey had changed them both. The fear that had followed her into the forest loosened its grip, replaced by a quiet, stronger self.</em>
+    <p>Read your whole story. Fix tense (use past), spelling, and repetition. Add or rewrite 1–2 sentences to make it flow.</p>
+    <textarea id="input6" placeholder="Add final touches or small rewrites here..."></textarea>
+  </div>
+
+  <div class="summary" id="summary">
+    <h2>Final Story</h2>
+    <div id="preview">Start writing in Step 1…</div>
+    <p class="counter">Total words: <span id="wordCount">0</span> <small>(aim ~500)</small></p>
+    <button onclick="saveProgress()">💾 Save</button>
+    <button onclick="copyStory()">📋 Copy Story</button>
+    <button onclick="exportText()">⬇️ Download .txt</button>
+    <button onclick="clearProgress()">🗑️ Clear Saved Data</button>
+  </div>
+
+  <script>
+    const fields = [1,2,3,4,5,6].map(i=>document.getElementById('input'+i));
+    const sofarBoxes = {
+      2: document.getElementById('sofar2'),
+      3: document.getElementById('sofar3'),
+      4: document.getElementById('sofar4'),
+      5: document.getElementById('sofar5'),
+      6: document.getElementById('sofar6')
+    };
+    const preview = document.getElementById('preview');
+    const wordCountEl = document.getElementById('wordCount');
+    const KEY = (i)=>`input${i}`; // keep existing storage keys for compatibility
+
+    // Load saved data
+    window.addEventListener('DOMContentLoaded', () => {
+      for (let i=1;i<=6;i++){
+        const saved = localStorage.getItem(KEY(i));
+        if(saved) document.getElementById('input'+i).value = saved;
+      }
+      updateAll();
+    });
+
+    // Live updates
+    fields.forEach((el, idx) => {
+      el.addEventListener('input', () => { localStorage.setItem(KEY(idx+1), el.value); updateAll(); });
+    });
+
+    function updateAll(){
+      renderSofar();
+      renderPreview();
+      renderWordCount();
+    }
+
+    function buildStory(upto){
+      // upto: include steps up to this index (1..6). If undefined, include all.
+      const end = upto || 6;
+      return fields.slice(0,end).map(el => el.value.trim()).filter(Boolean).join('\\n\\n');
+    }
+
+    function renderSofar(){
+      for (let step=2; step<=6; step++){
+        if(sofarBoxes[step]) sofarBoxes[step].textContent = buildStory(step-1) || '(Nothing written yet.)';
+      }
+    }
+
+    function renderPreview(){
+      const text = buildStory();
+      preview.textContent = text || 'Start writing in Step 1…';
+    }
+
+    function countWords(text){
+      const m = text.match(/\\b[\\w’'\\-]+\\b/g);
+      return m ? m.length : 0;
+    }
+
+    function renderWordCount(){
+      const wc = countWords(buildStory());
+      wordCountEl.textContent = wc;
+    }
+
+    function saveProgress(){
+      fields.forEach((el, idx) => localStorage.setItem(KEY(idx+1), el.value));
+      alert('Saved to this browser.');
+    }
+
+    function clearProgress(){
+      if(!confirm('Delete all saved work in this browser?')) return;
+      fields.forEach((el, idx) => { localStorage.removeItem(KEY(idx+1)); el.value=''; });
+      updateAll();
+    }
+
+    async function copyStory(){
+      const text = buildStory();
+      try { await navigator.clipboard.writeText(text); alert('Story copied to clipboard.'); }
+      catch { fallbackCopy(text); }
+    }
+
+    function exportText(){
+      const text = buildStory();
+      const blob = new Blob([text], { type:'text/plain' });
+      const link = document.createElement('a');
+      link.href = URL.createObjectURL(blob);
+      link.download = 'my_story.txt';
+      link.click();
+      URL.revokeObjectURL(link.href);
+    }
+
+    function fallbackCopy(text){
+      const ta = document.createElement('textarea');
+      ta.value = text; document.body.appendChild(ta); ta.select();
+      try { document.execCommand('copy'); alert('Story copied.'); }
+      finally { document.body.removeChild(ta); }
+    }
+  </script>
+</body>
+</html>
